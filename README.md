@@ -10,16 +10,16 @@ This project analyzes IPL cricket data and builds predictive models to estimate 
 
 ```
 IPL_win_probability/
-├── app.py                          # Main application file
+├── app.py                          # frontend
 ├── requirements.txt                # Python dependencies
-├── README.md                       # This file
-├── data/                           # Data directory
+├── README.md                       # readme
+├── data/                           # data
 │   ├── matches.csv                # IPL match information
 │   ├── deliveries.csv             # Ball-by-ball delivery data
 │   ├── teams.csv                  # Team information
 │   ├── teamwise_home_and_away.csv # Home/away statistics
 │   └── most_runs_average_strikerate.csv  # Player statistics
-├── notebooks/                      # Jupyter notebooks
+├── notebooks/                      
 │   └── model.ipynb                # Model development notebook
 └── models/                         # Trained model storage
 ```
