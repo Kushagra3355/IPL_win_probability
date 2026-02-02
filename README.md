@@ -109,12 +109,5 @@ The trained models predict the probability of a team winning a match, which can 
 - Integration with live match APIs
 - Enhanced feature engineering
 - Ensemble model approaches
-- Web interface for predictions
 
-## Author
 
-Kushagra3355
-
-## License
-
-This project is open source and available under the MIT License.
