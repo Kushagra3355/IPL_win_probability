@@ -10,16 +10,16 @@ This project analyzes IPL cricket data and builds predictive models to estimate 
 
 ```
 IPL_win_probability/
-├── app.py                          # Main application file
+├── app.py                          # frontend
 ├── requirements.txt                # Python dependencies
-├── README.md                       # This file
-├── data/                           # Data directory
+├── README.md                       # readme
+├── data/                           # data
 │   ├── matches.csv                # IPL match information
 │   ├── deliveries.csv             # Ball-by-ball delivery data
 │   ├── teams.csv                  # Team information
 │   ├── teamwise_home_and_away.csv # Home/away statistics
 │   └── most_runs_average_strikerate.csv  # Player statistics
-├── notebooks/                      # Jupyter notebooks
+├── notebooks/                      
 │   └── model.ipynb                # Model development notebook
 └── models/                         # Trained model storage
 ```
@@ -109,12 +109,5 @@ The trained models predict the probability of a team winning a match, which can 
 - Integration with live match APIs
 - Enhanced feature engineering
 - Ensemble model approaches
-- Web interface for predictions
 
-## Author
 
-Kushagra3355
-
-## License
-
-This project is open source and available under the MIT License.
