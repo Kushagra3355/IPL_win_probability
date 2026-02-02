@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import os
 
 teams = [
     "Sunrisers Hyderabad",
@@ -45,7 +46,19 @@ cities = [
     "Bengaluru",
 ]
 
-pipe = pickle.load(open("models/pipe.pkl", "rb"))
+# Load the model with proper error handling
+model_path = "models/pipe.pkl"
+if not os.path.exists(model_path):
+    st.error(
+        f"❌ Model file not found at '{model_path}'. Please ensure the model is in the correct location."
+    )
+    st.stop()
+
+try:
+    pipe = pickle.load(open(model_path, "rb"))
+except Exception as e:
+    st.error(f"❌ Error loading model: {str(e)}")
+    st.stop()
 
 st.title("IPL Win Predictor")
 
